@@ -864,13 +864,13 @@ template {
             flex-direction: row;
   }
   .booking {
-    width: 340px;
+    width: 370px;
   }
   .slider {
     width: 100%;
   }
   .map {
-    width: 340px;
+    width: 370px;
   }
 }
 
@@ -970,10 +970,23 @@ template {
   }
 }
 
+@media (max-width: 450px) {
+  .slider {
+    height: 179px;
+  }
+  .slider-button {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 @media (max-width: 330px) {
   .container {
     max-width: 278px;
     width: 85%;
+  }
+  .slider {
+    width: 278px;
   }
 }
 /*# sourceMappingURL=style.css.map */
