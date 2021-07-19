@@ -1773,6 +1773,12 @@ template {
   }
 }
 
+@media (max-width: 350px) {
+  .footer__contact-form {
+    max-width: 281px;
+  }
+}
+
 @media (max-width: 330px) {
   .container {
     max-width: 278px;
