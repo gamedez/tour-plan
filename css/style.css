@@ -1367,9 +1367,13 @@ template {
 .footer__information-text {
   list-style: none;
   padding-right: 10px;
+}
+
+.footer__information--link {
   font-size: 12px;
   line-height: 15px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .footer__message {
