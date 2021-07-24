@@ -1436,7 +1436,8 @@ template {
   top: 50%;
   left: 50%;
   width: 478px;
-  height: 55%;
+  height: 90%;
+  max-height: 487px;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
