@@ -1436,7 +1436,7 @@ template {
   top: 50%;
   left: 50%;
   width: 478px;
-  min-height: 400px;
+  height: 55%;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1681,9 +1681,6 @@ template {
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
-  }
-  .modal__dialog {
-    height: 100px;
   }
   .modal__dialog--visible {
     display: block;
