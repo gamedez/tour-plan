@@ -71,4 +71,23 @@ $(".form").each(function () {
 $(function() {
    $('.phone').mask('+7 (000) 000-00-00');
  });
+ // обработка формы подписки на рассылку
+$(".error").each(function () {
+  $(this).validate({
+  errorClass: "error",
+  messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must be more than 2 characters long"
+    },
+    email: {
+      required: "We need your email address to contact",
+      email: "The mail format should be 1@domain.ru"
+    },
+    phone: {
+      required: "The phone number is required to fill",
+    },
+  }
+});
+});
 });
