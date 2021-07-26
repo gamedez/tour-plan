@@ -95,10 +95,10 @@
                     <a href="#" class="breadcrumb-list__link">Home</a>
                 </li>
                 <li class="breadcrumb-list__item">
-                    <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+                    <a href="#" class="breadcrumb-list__link">Feedback form</a>
                 </li>
                 <li class="breadcrumb-list__item">
-                    Grand Hilton Hotel
+                    The form has been sent
                 </li>
             </ul>
         </div>
@@ -190,18 +190,24 @@
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg"
                                     alt="icon: email"></div>
-                            <a class="footer__link"
-                                href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+                            <a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-                        <textarea class="footer__message" placeholder="Message" name="message" cols="30" rows="10"></textarea>
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <div class="footer__input-group">
+                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name"
+                                required>
+                        </div>
+                        <div class="footer__input-group">
+                            <input type="tel" name="phone" id="phone" class="input footer__input phone"
+                                placeholder="Phone Number*" name="phone" required>
+                        </div>
+                        <textarea class="message footer__message" placeholder="Message" name="message" cols="30"
+                            rows="10"></textarea>
                         <div class="footer__form-button">
                             <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
@@ -212,9 +218,11 @@
             </div>
             <div class="footer__information">
                 <ul class="footer__information-ul">
-                    <li class="footer__information-text">Disclaimer</li>
-                    <li class="footer__information-text">Conditions of use</li>
-                    <li class="footer__information-text">Cancellation policy</li>
+                    <li class="footer__information-text"><a href="/" class="footer__information--link">Disclaimer</a></li>
+                    <li class="footer__information-text"><a href="/" class="footer__information--link">Conditions of use</a>
+                    </li>
+                    <li class="footer__information-text"><a href="/" class="footer__information--link">Cancellation
+                            policy</a></li>
                 </ul>
                 <img src="img/pay.svg" alt="icon: pay sistem" class="footer__information-image">
             </div>
