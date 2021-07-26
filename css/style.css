@@ -1434,6 +1434,15 @@ template {
   margin-left: 70px;
 }
 
+.footer__number, .footer__letter {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;

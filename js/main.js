@@ -51,6 +51,20 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay--visible');
   modalDialog.removeClass('modal__dialog--visible');
 }
+ document.onkeydown = function(evt) {
+      evt = evt || window.event;
+      var isEscape = false;
+      if ("key" in evt) {
+          isEscape = (evt.key === "Escape" || evt.key === "Esc");
+      } else {
+          isEscape = (evt.keyCode === 27);
+      }
+      if (isEscape) {
+          $(".modal__overlay").removeClass("modal__overlay--visible");
+          $(".modal__dialog").removeClass("modal__dialog--visible");
+          $("body").removeClass("body__no-scroll");
+      } 
+  };
 // обработка формы (все формы, кроме newsletter)
 $(".form").each(function () {
   $(this).validate({
