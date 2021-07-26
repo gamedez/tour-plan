@@ -1,3 +1,4 @@
+// слайдер
 $(document).ready(function (){
   var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
@@ -25,6 +26,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
 });
 
+// открытие/закрытие модального окна
 var menuButton = $(".menu-button");
 menuButton.on("click", function () {
   document
@@ -49,7 +51,7 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay--visible');
   modalDialog.removeClass('modal__dialog--visible');
 }
-// обработка формы
+// обработка формы (все формы, кроме newsletter)
 $(".form").each(function () {
   $(this).validate({
   errorClass: "invalid",
@@ -71,7 +73,7 @@ $(".form").each(function () {
 $(function() {
    $('.phone').mask('+7 (000) 000-00-00');
  });
- // обработка формы подписки на рассылку
+ // обработка формы подписки на рассылку (блок newsletter)
 $(".error").each(function () {
   $(this).validate({
   errorClass: "error",
