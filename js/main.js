@@ -49,4 +49,26 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay--visible');
   modalDialog.removeClass('modal__dialog--visible');
 }
+// обработка формы
+$(".form").each(function () {
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must be more than 2 characters long"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "the phone number is required to fill",
+    },
+  }
+});
+});
+$(function() {
+   $('.phone').mask('+7 (000) 000 00-00');
+ });
 });
