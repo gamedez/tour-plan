@@ -59,11 +59,11 @@ $(".form").each(function () {
       minlength: "The name must be more than 2 characters long"
     },
     email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      required: "We need your email address to contact",
+      email: "The mail format should be 1@domain.ru"
     },
     phone: {
-      required: "the phone number is required to fill",
+      required: "The phone number is required to fill",
     },
   }
 });

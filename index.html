@@ -200,8 +200,8 @@
             <h2 class="newsletter-title newsletter__title">subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address">
+            <form action="#" class="subscribe newsletter__subscribe form">
+                <input type="email" name="email" id="email" class="subscribe__input" placeholder="Your email address" required>
                 <button class="subscribe__button">Send</button>
             </form>
         </div>
@@ -538,7 +538,7 @@
             <form action="send.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required>
                 <input type="tel" name="phone" id="phone" class="input modal__input phone" placeholder="Phone Number*" required>
-                <input type="email" name="email" id="email" class="input modal__input" placeholder="Email*" name="email" required>
+                <input type="email" name="email" id="email" class="input modal__input" placeholder="Email*" required>
                 <textarea class="message modal__message" placeholder="Message" name="message" cols="30" rows="10"></textarea>
                 <div class="modal__form-button">
                     <button class="button modal__button" type="submit">Send</button>
