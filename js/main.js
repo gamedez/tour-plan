@@ -106,4 +106,5 @@ $(".error").each(function () {
   }
 });
 });
+AOS.init();
 });
