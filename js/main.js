@@ -79,7 +79,7 @@ $(".form").each(function () {
       email: "The mail format should be 1@domain.ru"
     },
     phone: {
-      required: "The phone number is required to fill",
+      required: "Phone number not entered",
     },
   }
 });
@@ -102,6 +102,7 @@ $(".error").each(function () {
     },
     phone: {
       required: "The phone number is required to fill",
+      minlength: "Please write at least 18 characters"
     },
   }
 });

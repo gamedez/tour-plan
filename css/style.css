@@ -62,6 +62,10 @@ img {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
   z-index: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
 }
 
 .error {
@@ -69,6 +73,17 @@ img {
   z-index: 0;
   position: absolute;
   top: -40%;
+}
+
+button:hover {
+  -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+          box-shadow: 1px 1px 10px 2px #9ecdf3;
+}
+
+a:hover {
+  -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+          box-shadow: 1px 1px 10px 2px #9ecdf3;
+  border-radius: 4px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -680,6 +695,9 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .hotel-slider__button--next {
@@ -723,6 +741,11 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter:after {
+  content: '5';
+  font-size: 10px;
 }
 
 .swiper-slide__image {
@@ -961,6 +984,10 @@ template {
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -1203,6 +1230,7 @@ template {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  font-family: Nunito;
   color: #fff;
   padding: 7px 22px;
   border: none;
@@ -1384,6 +1412,10 @@ template {
   padding: 0 23px;
   height: 50px;
   width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__input-group {
@@ -1402,6 +1434,10 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__info {
@@ -1631,7 +1667,7 @@ template {
 @media (max-width: 992px) {
   .container, .newslater-wrapper {
     max-width: 760px;
-    width: 90%;
+    width: 91%;
   }
   .logo {
     width: 132px;
@@ -1690,7 +1726,13 @@ template {
   .booking {
     width: 340px;
     min-height: 210px;
-    padding: 25px 25px 20px 25px;
+    padding: 28px 22px 20px 23px;
+  }
+  .booking__pricetag {
+    margin-bottom: -2px;
+  }
+  .booking__per-room {
+    margin-bottom: -2px;
   }
   .map {
     width: 370px;
@@ -1735,7 +1777,7 @@ template {
     margin-bottom: 20px;
   }
   .card {
-    width: 340px;
+    width: 48%;
     height: 255px;
   }
   .footer {
@@ -1805,11 +1847,14 @@ template {
     grid-row: 4;
   }
   .footer__title--mb-3 {
-    margin-bottom: 35px;
+    margin-bottom: 26px;
   }
   .footer__title--inline {
     margin-left: -56px;
     margin-top: 7px;
+  }
+  .footer__title--mb-4 {
+    margin-bottom: 32px;
   }
   .footer__information {
     margin-top: 55px;
@@ -1818,13 +1863,26 @@ template {
     -ms-flex-preferred-size: 93%;
         flex-basis: 93%;
   }
+  .footer__text {
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .footer__item--mb-2 {
+    margin-left: 7px;
+  }
   .modal__dialog--visible {
     display: block;
     overflow: auto;
   }
+  button:hover, a:hover {
+    color: none;
+    -webkit-box-shadow: 0px 0px 0px 0px #EC1F46;
+            box-shadow: 0px 0px 0px 0px #EC1F46;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 90%;
@@ -2039,6 +2097,7 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 56px;
   }
   .footer__additional {
     -ms-grid-row: 4;
@@ -2077,6 +2136,9 @@ template {
         flex-wrap: wrap;
     margin-top: 30px;
   }
+  .thankyou {
+    padding: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2090,10 +2152,13 @@ template {
   .breadcrumb-list {
     padding: 8px 0;
   }
+  .stars {
+    margin-right: 15px;
+  }
   .stars-star {
     width: 8px;
     height: 8px;
-    margin-left: 2px;
+    margin-left: -2px;
   }
   .logo {
     width: 99px;
@@ -2117,10 +2182,12 @@ template {
     width: 100%;
   }
   .newsletter {
-    padding: 76px 0 83px 0;
+    padding: 14px 0 83px 0;
   }
   .newsletter__title {
-    margin-bottom: 37px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-left: 4px;
   }
   .newsletter-title {
     font-size: 20px;
@@ -2129,20 +2196,69 @@ template {
   .newsletter-title__strong {
     font-size: 30px;
     line-height: 38px;
+    margin-top: 5px;
   }
   .subscribe {
     width: 100%;
   }
+  .subscribe__button {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .subscribe__input {
+    width: 99%;
+    padding-left: 22px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
+    margin-bottom: 36px;
+  }
+  .reviews-slider__button {
+    margin-top: 6px;
+  }
+  .reviews-slider__button--next {
+    right: 42%;
+  }
+  .reviews-slider__button--prev {
+    left: 40%;
+  }
+  .activities {
+    padding-top: 12px;
+    padding-bottom: 41px;
   }
   .activities__title {
     font-size: 18px;
     line-height: 23px;
+    margin-bottom: 35px;
+  }
+  .activities__card--mb-1 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .activities__card--mb-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .activities__card--mb-3 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 28px;
+  }
+  .activities__card--mb-4 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .card {
     width: 100%;
+  }
+  .footer {
+    padding-top: 65px;
+    padding-bottom: 21px;
   }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
@@ -2153,12 +2269,19 @@ template {
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
+    width: 96px;
+    height: 114px;
   }
   .footer__social-network {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .footer__social-links {
+    margin-top: 0;
   }
   .footer__additional {
     -ms-grid-row: 4;
@@ -2205,6 +2328,7 @@ template {
   }
   .footer__title--inline {
     margin-left: 0;
+    margin-top: 0;
   }
   .footer__form-button {
     display: -webkit-box;
@@ -2253,8 +2377,8 @@ template {
 
 @media (max-width: 330px) {
   .container {
-    max-width: 278px;
-    width: 85%;
+    max-width: 280px;
+    width: 88%;
   }
   .slider {
     width: 278px;
@@ -2264,7 +2388,46 @@ template {
         flex-wrap: wrap;
   }
   .footer__social-links {
-    margin-top: 44px;
+    margin-top: 22px;
+    margin-left: 3px;
+  }
+  .footer__list {
+    margin-top: -10px;
+  }
+  .footer__title--mb-5 {
+    margin-top: -20px;
+  }
+  .footer__title--mb-4 {
+    margin-bottom: 17px;
+    margin-top: 1px;
+  }
+  .footer__text {
+    margin-bottom: 20px;
+  }
+  .footer__item--mb-2 {
+    margin-left: 2px;
+  }
+  .footer__item--mb-2:not:last-child {
+    margin-bottom: 22px;
+  }
+  .footer__icon {
+    margin-right: 0;
+  }
+  .footer__icon-wrapper {
+    min-width: 28px;
+  }
+  .footer__num-nowrap {
+    white-space: nowrap;
+  }
+  .footer__message {
+    margin-bottom: 16px;
+  }
+  .footer__information {
+    margin-top: 23px;
+  }
+  .footer__information-text {
+    white-space: nowrap;
+    padding-right: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

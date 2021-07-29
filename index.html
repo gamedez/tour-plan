@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>best tour plan - the best hotel selection service</title>
+    <title>Best tour plan - the best hotel selection service</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -143,7 +143,7 @@
                 </div>
                 <div class="rating hotel-info__rating">
                     <span class="rating__text">User Rattings</span>
-                    <span class="rating__counter">4.5/5</span>
+                    <span class="rating__counter">4.5/</span>
                 </div>
             </div>
             <div class="hotel-grid">
@@ -410,28 +410,28 @@
         <div class="container">
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
-                <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card activities__card activities__card--mb-1" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner<br>of chamarel</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card activities__card activities__card--mb-2" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf<br>course</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card activities__card activities__card--mb-3" data-aos="fade-up" data-aos-delay="300">
                     <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking<br>trip - full day</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card activities__card activities__card--mb-4" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery<br>quest</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
             </div>
@@ -492,7 +492,7 @@
                 </div>
                 <!-- /.footer__list -->
                 <div class="footer__contact-details">
-                    <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+                    <h3 class="footer__title footer__title--mb-3 footer__title--mb-5">Contact Details</h3>
                     <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
                     <ul class="footer__ul">
                         <li class="footer__item footer__item--mb-2">
@@ -527,13 +527,13 @@
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
-                    <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+                    <h3 class="footer__title footer__title--mb-3 footer__title--mb-4">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer__form form">
                         <div class="footer__input-group">
                             <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="2" required>
                         </div>
                         <div class="footer__input-group">
-                            <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required>
+                            <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" minlength="18" required>
                         </div>
                         <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                         <div class="footer__form-button">
@@ -567,7 +567,7 @@
             <h3 class="modal__title modal__title--mb-3">Booking</h3>
             <form action="send.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required>
-                <input type="tel" name="phone" class="input modal__input phone" placeholder="Phone Number*" required>
+                <input type="tel" name="phone" class="input modal__input phone" placeholder="Phone Number*" minlength="18" required>
                 <input type="email" name="email" class="input modal__input" placeholder="Email*" required>
                 <textarea class="message modal__message" placeholder="Message" name="message" cols="30" rows="10"></textarea>
                 <div class="modal__form-button">
