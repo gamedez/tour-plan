@@ -57,6 +57,8 @@
         &-info
             &__offer
                 margin-left: 16px
+    .rating
+        margin-top: 15px
     .stars
         &-star
             width: 6px
@@ -172,8 +174,7 @@
                 display: block
                 overflow: auto
     button:hover, a:hover
-        color: none
-        box-shadow: 0px 0px 0px 0px $primary
+        filter: none
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -188,24 +189,33 @@
                     display: none
                 &--visible
                     display: flex
+                    margin-left: 6px
+        &__menu
+            margin-left: 0
         &-bottom
             display: none
             position: fixed
             left: 0
             right: 0
             bottom: 0
-            top: 78px
-            padding-top: 30px
+            top: 66px
+            padding-top: 12px
             &--visible
                 display: block
                 overflow: scroll
         &-menu
             flex-direction: column
+            margin-left: 0
+            padding-top: 24px
             &__item
-                margin-bottom: 20px
                 &--mobile
                     &--visible
                         display: block
+                        margin-bottom: 27px
+            &__link
+                margin-top: 18px
+                &--mb-1
+                    margin-top: 23px
         &__user
             flex-direction: column
             justify-content: center
@@ -217,7 +227,8 @@
                 top: 0
                 z-index: 99
         &__search
-            width: 75%
+            width: 245px
+            margin-left: 10px
     .menu
         &-button
             display: flex
